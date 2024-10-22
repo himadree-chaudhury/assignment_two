@@ -4,7 +4,7 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-body{
+body {
   width: 100%;
 }
 a {
@@ -27,7 +27,8 @@ header {
   display: flex;
   align-items: center;
 }
-.item-1,.item-2{
+.item-1,
+.item-2 {
   width: 50%;
 }
 .web-title {
@@ -75,8 +76,7 @@ header {
   font-size: 1rem;
   padding: 1rem 0;
   text-align: left;
-    color: rgba(239, 237, 232, 0.65);
-
+  color: rgba(239, 237, 232, 0.65);
 }
 .header-heading {
   font-size: 4.5rem;
@@ -94,7 +94,7 @@ header {
 .btn {
   border-radius: 42px;
   border: 0px;
-  padding: 1rem 2rem;
+  padding: 0.6rem 2rem;
   font-size: 1.2rem;
   font-weight: 600;
   color: rgb(255, 255, 255);
@@ -153,32 +153,63 @@ header {
   color: #fff;
   text-align: center;
 }
-.change-habits>h1{
+.change-habits > h1 {
   font-weight: 800;
   font-size: 3rem;
   padding: 2rem 0rem;
 }
-.change-habits>p {
+.change-habits > p {
   color: rgba(239, 237, 232, 0.65);
-
 }
-.habits{
+.habits {
   display: flex;
   justify-content: center;
   padding: 1rem 0rem;
 }
-.habit{
+.habit {
   padding: 1rem 0rem;
 }
-.habit img{
+.habit img {
   border-radius: 50%;
 }
-.habit h1{
+.habit h1 {
   padding: 1rem 0rem;
 }
-.habit p{
+.habit p {
   color: rgba(239, 237, 232, 0.65);
 }
+.run-extra-mile {
+  background: rgb(17, 17, 17);
+  color: #fff;
+}
+.run-extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+  border-radius: 18px;
+  padding: 1rem;
+  background: rgb(34, 34, 34);
+}
+.run {
+  padding: 1rem;
+}
+.run>h1{
+  font-weight: 800;
+  font-size: 3rem;
+  padding: 1rem 0rem;
+}
+.run>p{
+    color: rgba(239, 237, 232, 0.65);
+padding: 1rem 0rem;
+}
+.run-img img{
+  width: 25rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 
 
 
