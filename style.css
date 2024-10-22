@@ -52,7 +52,7 @@ header {
 }
 
 .nav-menu li {
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   text-decoration: none;
   font-weight: 400;
 }
@@ -194,50 +194,33 @@ header {
 .run {
   padding: 1rem;
 }
-.run>h1{
+.run > h1 {
   font-weight: 800;
   font-size: 3rem;
   padding: 1rem 0rem;
 }
-.run>p{
-    color: rgba(239, 237, 232, 0.65);
-padding: 1rem 0rem;
+.run > p {
+  color: rgba(239, 237, 232, 0.65);
+  padding: 1rem 0rem;
 }
-.run-img img{
+.run-img img {
   width: 25rem;
   height: 20rem;
   object-fit: cover;
   border-radius: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Trainings Section */
-#trainings {
-  padding: 40px;
-  background-color: #eaeaea;
-  text-align: center;
+.train-and-exercise {
+  background: rgb(17, 17, 17);
+  color: #fff;
+}
+.train-and-exercise > h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  padding: 1rem 0rem;
+}
+.train-and-exercise > p {
+  color: rgba(239, 237, 232, 0.65);
+  padding: 1rem 0rem;
 }
 
 /* BMI Calculator Section */
