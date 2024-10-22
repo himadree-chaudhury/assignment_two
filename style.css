@@ -71,11 +71,12 @@ header {
   width: 50%;
 }
 .header-text p {
-  padding: 28px 0;
+  font-size: 1rem;
+  padding: 1rem 0;
   text-align: left;
 }
 .header-heading {
-  font-size: 78px;
+  font-size: 4.5rem;
   font-weight: 900;
   text-align: left;
 }
@@ -85,81 +86,79 @@ header {
 }
 .header-btn {
   display: flex;
-  gap: 14px;
+  gap: 1rem;
 }
 .btn {
   border-radius: 42px;
   border: 0px;
-  width: 224px;
-  padding: 16px 40px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
 }
 .primary-btn {
-  font-size: 18px;
-  font-weight: 600;
   border: 1px solid transparent;
-  color: rgb(255, 255, 255);
   background: rgb(230, 83, 60);
 }
 
 .secondary-btn {
-  font-size: 18px;
-  font-weight: 600;
   border: 1px solid rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
   background: rgb(0, 0, 0);
 }
-.header-image img {
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
-}
-
 .feature {
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   backdrop-filter: blur(10px);
   background: rgba(48, 48, 48, 0.54);
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: rgb(250, 250, 249);
+  padding: 0.8rem;
 }
 .circle {
-  width: 40px;
-  height: 40px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   background-color: rgb(230, 83, 60);
 }
 .feature-1 {
-  font-size: 24px;
-  font-weight: 900;
-  color: rgb(250, 250, 249);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 0.8rem;
   position: absolute;
-  left: 63%;
+  left: 60%;
   top: 50%;
-  width: 12rem;
-  padding: 0.8rem;
 }
 .feature-2 {
-  font-size: 24px;
-  font-weight: 900;
-  color: rgb(250, 250, 249);
   position: absolute;
   left: 80%;
   top: 20%;
-  width: 12rem;
-  padding: 0.8rem;
 }
 .feature-text {
-  padding-top: 5px;
-  font-size: 16px;
+  padding-top: 0.2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: rgba(239, 237, 232, 0.65);
 }
 .feature-align {
   text-align: left;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Trainings Section */
 #trainings {
   padding: 40px;
