@@ -223,6 +223,97 @@ header {
   padding: 1rem 0rem;
 }
 
+.train{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.exercise-1{
+  background: linear-gradient(rgba(6, 255, 210, 0.5),rgba(6, 255, 210, 0.5)),url(./assets/exercise1.jpg);
+  width: 40rem;
+  height: 50rem;
+  object-fit: contain;
+}
+.exercise-2{
+  background: linear-gradient(rgba(255, 0, 0, 0.3),rgba(255, 0, 0, 0.3)),url(./assets/exercise2.png);
+  width: 40rem;
+  height: 50rem;
+  object-fit: contain;
+}
+
+.exercise-3{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(./assets/exercise3.png);
+  width: 40rem;
+  height: 50rem;
+  object-fit: contain;
+}
+
+.exercise-4{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(./assets/exercise4.png);
+  width: 40rem;
+  height: 50rem;
+  object-fit: contain;
+}
+
+.exercise-5{
+  background: linear-gradient(rgba(66, 255, 0, 0.3),rgba(66, 255, 0, 0.3)),url(./assets/exercise5.jpg);
+  width: 40rem;
+  height: 50rem;
+  object-fit: contain;
+}
+
+.exercise-6{
+  background: linear-gradient(rgba(0, 71, 255, 0.3),rgba(0, 71, 255, 0.3)),url(./assets/exercise6.jpg);
+  width: 40rem;
+  height: 50rem;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* BMI Calculator Section */
 #bmi-calculator {
   padding: 40px;
