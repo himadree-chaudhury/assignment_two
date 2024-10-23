@@ -6,6 +6,7 @@
 }
 body {
   width: 100%;
+  background: rgb(17, 17, 17);
 }
 a {
   text-decoration: none;
@@ -149,7 +150,6 @@ header {
   text-align: left;
 }
 .change-habits {
-  background: rgb(17, 17, 17);
   color: #fff;
   text-align: center;
 }
@@ -179,7 +179,6 @@ header {
   color: rgba(239, 237, 232, 0.65);
 }
 .run-extra-mile {
-  background: rgb(17, 17, 17);
   color: #fff;
 }
 .run-extra {
@@ -210,7 +209,6 @@ header {
   border-radius: 10px;
 }
 .train-and-exercise {
-  background: rgb(17, 17, 17);
   color: #fff;
 }
 .train-and-exercise > h1 {
@@ -222,76 +220,103 @@ header {
   color: rgba(239, 237, 232, 0.65);
   padding: 1rem 0rem;
 }
-
-.train{
+.image-grid {
   display: grid;
-  grid-template-columns: repeat(8,1fr);
-  
+  grid-template-columns: repeat(9, 1fr);
   padding: 1rem 0rem;
 }
-.train-item img{
+
+.grid-item {
+  position: relative;
+  height: 15rem;
+}
+
+.grid-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-color: #e6533c;
 }
-.exercise-1{
-grid-column: span 2;
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 1rem;
+  font-weight: 600;
 }
-.exercise-2{
+
+.exercise-1 {
+  grid-column: span 2;
+}
+
+.exercise-2 {
+  grid-column: span 5;
+}
+
+.exercise-3 {
+  grid-column: span 2;
+}
+
+.exercise-4 {
   grid-column: span 4;
 }
-.exercise-3{
-  grid-column: span 2;
-}
-.exercise-4{
-  grid-column: span 3;
-}
-.exercise-5{
-  grid-column: span 2;
-}
-.exercise-6{
-  grid-column: span 3;
-}
-/* .exercise-1{
-  background: linear-gradient(rgba(6, 255, 210, 0.5),rgba(6, 255, 210, 0.5)),url(./assets/exercise1.jpg);
-}
-.exercise-2{
-  background: linear-gradient(rgba(255, 0, 0, 0.3),rgba(255, 0, 0, 0.3)),url(./assets/exercise2.png);
-  grid-column: span 3;
-}
-.exercise-3{
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(./assets/exercise3.png);
+
+.exercise-5 {
   grid-column: span 2;
 }
 
-.exercise-4{
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(./assets/exercise4.png);
+.exercise-6 {
   grid-column: span 3;
 }
-.exercise-5{
-  background: linear-gradient(rgba(66, 255, 0, 0.3),rgba(66, 255, 0, 0.3)),url(./assets/exercise5.jpg);
+
+.teal {
+  background-color: rgba(6, 255, 210, 0.3);
+  display: flex;
+  justify-content: start;
+  align-items: end;
 }
 
-.exercise-6{
-  background: linear-gradient(rgba(0, 71, 255, 0.3),rgba(0, 71, 255, 0.3)),url(./assets/exercise6.jpg);
-  grid-column: span 2;
-} */
-
-.tr{
-  position: relative;
-  text-align: center;
+.red {
+  background-color: rgba(255, 0, 0, 0.3);
+  display: flex;
+  justify-content: start;
+  align-items: start;
 }
 
-.text{
-  color: white;
-position: absolute;
-bottom: 100px;
-left: 30%;
+.gray {
+  background-color: rgba(128, 128, 128, 0.3);
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.blackish {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: end;
+  align-items: start;
 }
 
+.lightgreen {
+  background-color: rgba(66, 255, 0, 0.3);
 
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
 
+.lightblue {
+  background-color: rgba(0, 71, 255, 0.3);
+
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+.grid-item p {
+  z-index: 1;
+}
 
 
 
