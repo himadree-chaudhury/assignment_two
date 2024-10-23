@@ -6,19 +6,18 @@
 }
 body {
   width: 100%;
+  font-family: "Inter", sans-serif;
 }
 a {
   text-decoration: none;
 }
 .container {
   padding: 1rem 2rem 0rem 2rem;
-  
+
   background: rgb(17, 17, 17);
 }
 header {
-  
   padding: 1rem 2rem 0rem 2rem;
-  font-family: "Inter", sans-serif;
   color: white;
   background: linear-gradient(
     to bottom,
@@ -26,7 +25,6 @@ header {
     rgba(15, 15, 15, 0.9),
     rgb(17, 17, 17)
   );
-  
 }
 .nav-container {
   display: flex;
@@ -323,6 +321,7 @@ header {
 #team {
   color: #fff;
   text-align: center;
+  padding-bottom: 5rem;
 }
 #team > h1 {
   font-weight: 800;
@@ -361,26 +360,24 @@ header {
   font-size: 1.5rem;
 }
 .members img {
-  
   opacity: 70%;
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 18px;
 }
-.calculator-heading{
-  padding-left:10rem;
+.calculator-heading {
+  padding-left: 10rem;
 }
 
-.calculator-heading>h1 {
+.calculator-heading > h1 {
   width: 80%;
   color: #fff;
   font-weight: 800;
   font-size: 3rem;
   padding: 1rem 0rem;
 }
-.calculator-heading>p{
-  
+.calculator-heading > p {
   color: rgba(239, 237, 232, 0.65);
   padding: 1rem 0rem 2rem 0rem;
 }
@@ -391,17 +388,19 @@ header {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-.bmi-chart{
+.bmi-chart {
   display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 1rem;
   width: 50%;
 }
-.bmi-table{
+.bmi-table {
   width: 50%;
 }
-table, th, td {
+table,
+th,
+td {
   text-align: left;
   padding: 0.8rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -410,13 +409,12 @@ table, th, td {
 .bmi-chart td {
   color: rgba(239, 237, 232, 0.65);
 }
-.calculator-container{
+.calculator-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   flex: 1;
   gap: 1rem;
-
 }
 .calculator-container > p {
   color: rgba(239, 237, 232, 0.65);
@@ -434,10 +432,10 @@ select {
   background: rgba(255, 255, 255, 0.1);
   color: white;
 }
-select{
+select {
   color: rgba(255, 255, 255, 0.6);
 }
-select>option{
+select > option {
   background: rgba(34, 34, 34, 0.9);
 }
 ::placeholder {
@@ -446,10 +444,48 @@ select>option{
 #factor {
   grid-column: span 2;
 }
-.bmi-btn{
+.bmi-btn {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30%;
+}
+.footer-container {
+  background: rgb(34, 34, 34);
+}
+.footer-flex {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+.footer-heading {
+  width: 50%;
+}
+.footer-heading > p {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-title {
+  font-weight: 800;
+  font-size: 3rem;
+}
+.get-start > ul > li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0.5rem 0rem;
+}
+.get-start a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.get-start > h1 {
+  color: #fff;
+}
+hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.copyright {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 2rem 0;
+  text-align: center;
 }
