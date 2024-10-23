@@ -134,6 +134,7 @@ header {
   display: flex;
   gap: 1rem;
 }
+/* *Universal Button */
 .btn {
   cursor: pointer;
   border-radius: 42px;
@@ -143,6 +144,7 @@ header {
   font-weight: 600;
   color: rgb(255, 255, 255);
 }
+/* *Header Button */
 .primary-btn {
   border: 1px solid transparent;
   background: rgb(230, 83, 60);
@@ -155,6 +157,7 @@ header {
 .header-image {
   position: relative;
 }
+/* *Header Floating Features */
 .feature {
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -195,6 +198,7 @@ header {
 .feature-align {
   text-align: left;
 }
+/* *Habit Section */
 .change-habits {
   color: #fff;
   text-align: center;
@@ -224,6 +228,7 @@ header {
 .habit p {
   color: rgba(239, 237, 232, 0.65);
 }
+/* *Run-extra Section */
 .run-extra-mile {
   color: #fff;
 }
@@ -254,6 +259,7 @@ header {
   object-fit: cover;
   border-radius: 10px;
 }
+/* *Training Section */
 .train-and-exercise > h1 {
   color: #fff;
   font-weight: 800;
@@ -357,54 +363,8 @@ header {
   justify-content: start;
   align-items: end;
 }
-#team {
-  color: #fff;
-  text-align: center;
-  padding-bottom: 2rem;
-}
-#team > h1 {
-  font-weight: 800;
-  font-size: 3rem;
-  padding: 1rem 0rem;
-}
-#team > p {
-  color: rgba(239, 237, 232, 0.65);
-  padding: 1rem 0rem 2rem 0rem;
-}
-.team-members {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  border-radius: 18px;
-  padding: 1rem;
-  background: rgb(34, 34, 34);
-}
+/* *BMI Calculator */
 
-.members {
-  position: relative;
-  height: 20rem;
-}
-.member-name {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: start;
-}
-.member-name > p {
-  color: rgba(239, 237, 232, 0.65);
-  font-size: 1rem;
-}
-.member-name > h1 {
-  font-weight: 800;
-  font-size: 1.5rem;
-}
-.members img {
-  opacity: 70%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 18px;
-}
 .calculator-heading {
   padding-left: 10rem;
 }
@@ -489,44 +449,57 @@ select > option {
   justify-content: center;
   width: 30%;
 }
-.footer-container {
-  background: rgb(34, 34, 34);
+/* *Team Section */
+
+#team {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2rem;
 }
-.footer-flex {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  padding: 5rem 0;
-}
-.footer-heading {
-  width: 50%;
-}
-.footer-heading > p {
-  color: rgba(255, 255, 255, 0.5);
-}
-.footer-title {
+#team > h1 {
   font-weight: 800;
   font-size: 3rem;
+  padding: 1rem 0rem;
 }
-.get-start > ul > li {
-  text-decoration: none;
-  list-style: none;
-  padding: 0.5rem 0rem;
+#team > p {
+  color: rgba(239, 237, 232, 0.65);
+  padding: 1rem 0rem 2rem 0rem;
 }
-.get-start a {
-  color: rgba(255, 255, 255, 0.5);
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  border-radius: 18px;
+  padding: 1rem;
+  background: rgb(34, 34, 34);
 }
-.get-start > h1 {
-  color: #fff;
+
+.members {
+  position: relative;
+  height: 20rem;
 }
-hr {
-  border-color: rgba(255, 255, 255, 0.1);
+.member-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
 }
-.copyright {
-  color: rgba(255, 255, 255, 0.5);
-  padding: 2rem 0;
-  text-align: center;
+.member-name > p {
+  color: rgba(239, 237, 232, 0.65);
+  font-size: 1rem;
 }
+.member-name > h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.members img {
+  opacity: 70%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+/* *Articles */
 
 .latest-posts {
   padding-bottom: 2rem;
@@ -585,6 +558,49 @@ hr {
 .read-more:hover {
   background-color: #e6533c;
 }
+
+/* *Footer Section */
+.footer-container {
+  background: rgb(34, 34, 34);
+}
+.footer-flex {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+.footer-heading {
+  width: 50%;
+}
+.footer-heading > p {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-title {
+  font-weight: 800;
+  font-size: 3rem;
+}
+.get-start > ul > li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0.5rem 0rem;
+}
+.get-start a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.get-start > h1 {
+  color: #fff;
+}
+/* *Horizontal Bar */
+hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+/* *Copyright Claim */
+.copyright {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 2rem 0;
+  text-align: center;
+}
+
 
 /* *Media Query For Mobile Devices */
 
