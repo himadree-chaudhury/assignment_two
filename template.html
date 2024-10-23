@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid with Color Overlay</title>
+    <style>
+        * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.grid-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Default overlay color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.teal {
+  background-color: rgba(0, 128, 128, 0.6);
+}
+
+.red {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.gray {
+  background-color: rgba(128, 128, 128, 0.6);
+}
+
+.green {
+  background-color: rgba(0, 255, 0, 0.6);
+}
+
+.blue {
+  background-color: rgba(0, 0, 255, 0.6);
+}
+
+.lightblue {
+  background-color: rgba(173, 216, 230, 0.6);
+}
+
+.grid-item p {
+  z-index: 1;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <section class="grid-section">
+        <h1>Trainings and Exercises</h1>
+        <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+
+        <div class="image-grid">
+            <div class="grid-item">
+                <img src="./assets/exercise1.jpg" alt="Exercise 1">
+                <div class="overlay teal">
+                    <p>Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/exercise2.png" alt="Exercise 2">
+                <div class="overlay red">
+                    <p>Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/exercise3.png" alt="Exercise 3">
+                <div class="overlay gray">
+                    <p>Leg Press: Works the quadriceps and glutes</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/exercise4.png" alt="Exercise 4">
+                <div class="overlay green">
+                    <p>Leg Press: Works the quadriceps and glutes</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/exercise5.jpg" alt="Exercise 5">
+                <div class="overlay blue">
+                    <p>Leg Press: Works the quadriceps and glutes</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./assets/exercise6.jpg" alt="Exercise 6">
+                <div class="overlay lightblue">
+                    <p>Leg Press: Works the quadriceps and glutes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

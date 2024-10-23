@@ -225,15 +225,35 @@ header {
 
 .train{
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(8,1fr);
+  
+  padding: 1rem 0rem;
 }
-.train-item{
+.train-item img{
   width: 100%;
-  height: 40rem;
+  height: 100%;
   object-fit: cover;
-
+  background-color: #e6533c;
 }
 .exercise-1{
+grid-column: span 2;
+}
+.exercise-2{
+  grid-column: span 4;
+}
+.exercise-3{
+  grid-column: span 2;
+}
+.exercise-4{
+  grid-column: span 3;
+}
+.exercise-5{
+  grid-column: span 2;
+}
+.exercise-6{
+  grid-column: span 3;
+}
+/* .exercise-1{
   background: linear-gradient(rgba(6, 255, 210, 0.5),rgba(6, 255, 210, 0.5)),url(./assets/exercise1.jpg);
 }
 .exercise-2{
@@ -256,23 +276,19 @@ header {
 .exercise-6{
   background: linear-gradient(rgba(0, 71, 255, 0.3),rgba(0, 71, 255, 0.3)),url(./assets/exercise6.jpg);
   grid-column: span 2;
-}
-.test-div{
-  background: linear-gradient(rgba(66, 255, 0, 0.3),rgba(66, 255, 0, 0.3));
-}
-.test-div img{
-width: 50%;
-height: 100%;
-object-fit: cover;
+} */
+
+.tr{
+  position: relative;
+  text-align: center;
 }
 
-
-
-
-
-
-
-
+.text{
+  color: white;
+position: absolute;
+bottom: 100px;
+left: 30%;
+}
 
 
 
