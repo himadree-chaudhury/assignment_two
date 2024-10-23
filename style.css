@@ -6,15 +6,18 @@
 }
 body {
   width: 100%;
-  background: rgb(17, 17, 17);
 }
 a {
   text-decoration: none;
 }
 .container {
   padding: 1rem 2rem 0rem 2rem;
+  
+  background: rgb(17, 17, 17);
 }
 header {
+  
+  padding: 1rem 2rem 0rem 2rem;
   font-family: "Inter", sans-serif;
   color: white;
   background: linear-gradient(
@@ -23,6 +26,7 @@ header {
     rgba(15, 15, 15, 0.9),
     rgb(17, 17, 17)
   );
+  
 }
 .nav-container {
   display: flex;
@@ -357,17 +361,31 @@ header {
   font-size: 1.5rem;
 }
 .members img {
-  opacity: 80%;
+  
+  opacity: 70%;
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 18px;
 }
+.calculator-heading{
+  padding-left:10rem;
+}
 
-#bmi-calculator-container {
-  background: rgb(34, 34, 34);
+.calculator-heading>h1 {
+  width: 80%;
+  color: #fff;
+  font-weight: 800;
+  font-size: 3rem;
+  padding: 1rem 0rem;
+}
+.calculator-heading>p{
+  
+  color: rgba(239, 237, 232, 0.65);
+  padding: 1rem 0rem 2rem 0rem;
 }
 .bmi-calculator {
+  background: rgb(34, 34, 34);
   color: white;
   display: flex;
   padding-top: 5rem;
@@ -433,5 +451,5 @@ select>option{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20%;
+  width: 30%;
 }
