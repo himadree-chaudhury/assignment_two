@@ -135,6 +135,7 @@ header {
   gap: 1rem;
 }
 .btn {
+  cursor: pointer;
   border-radius: 42px;
   border: 0px;
   padding: 0.6rem 2rem;
@@ -449,7 +450,7 @@ td {
 .calculator-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+
   flex: 1;
   gap: 1rem;
 }
@@ -587,7 +588,7 @@ hr {
 
 /* *Media Query For Mobile Devices */
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .hamburger {
     display: block;
   }
@@ -609,7 +610,6 @@ hr {
     gap: 2rem;
   }
   .run-img img{
-    
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -638,8 +638,14 @@ hr {
   .bmi-table {
     width: 100%;
   }
-  form >input{
-    width: 80%;
+  .form-field{
+    grid-template-columns: repeat(1,1fr);
+  }
+  #factor{
+    grid-column: span 1;
+  }
+  .bmi-btn{
+width: 100%;
   }
   .team-members {
     grid-template-columns: repeat(1, 1fr);
