@@ -75,6 +75,7 @@ header {
   display: flex;
   align-items: center;
   position: relative;
+  justify-content:end ;
 }
 .hamburger {
   display: none;
