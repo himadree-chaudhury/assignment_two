@@ -13,7 +13,6 @@ a {
 }
 .container {
   padding: 1rem 2rem 0rem 2rem;
-
   background: rgb(17, 17, 17);
 }
 header {
@@ -27,6 +26,7 @@ header {
   );
 }
 .nav-container {
+  top: 0;
   display: flex;
   align-items: center;
 }
@@ -488,4 +488,67 @@ hr {
   color: rgba(255, 255, 255, 0.5);
   padding: 2rem 0;
   text-align: center;
+}
+
+
+
+
+
+
+.latest-posts {
+  padding-bottom: 2rem;
+  text-align: center;
+  color:#fff;
+}
+
+.post-section-title h3 {
+  color: rgba(239, 237, 232, 0.65);
+}
+
+.post-section-title h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  padding: 1rem 0rem;
+}
+.post-item {
+  background: rgb(34, 34, 34);
+  display: flex;
+  padding: 1rem;
+  border: 1px solid #333;
+}
+
+.post-item .post-image img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  margin-right: 1.5rem;
+}
+
+.post-content {
+  text-align: left;
+  flex: 1;
+}
+
+.post-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.post-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(239, 237, 232, 0.65);
+}
+
+.read-more {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #e6533c;
+  transition: background-color 0.3s;
+}
+
+.read-more:hover {
+  background-color: #e6533c;
 }

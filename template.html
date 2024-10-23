@@ -4,149 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Grid with Color Overlay</title>
+    <title>Latest Posts & Articles</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        .grid-section {
-            padding: 20px;
-            text-align: center;
-        }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-        }
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0c0c0e;
+  color: #fff;
+}
 
-        .grid-item {
-            position: relative;
-        }
+.latest-posts {
+  padding: 40px;
+  text-align: center;
+}
 
-        .grid-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+.section-title h3 {
+  color: #f77f00;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
 
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            /* Default overlay color */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
+.section-title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.post-item {
+  background-color: #1c1c1e;
+  display: flex;
+  padding: 20px;
+  border: 1px solid #333;
+}
 
-        .item-1 {
-            grid-column: span 2;
+.post-item .post-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
 
-        }
+.post-content {
+  text-align: left;
+  flex: 1;
+}
 
-        .item-2 {
-            grid-column: span 4;
+.post-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
 
-        }
+.post-content p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #aaa;
+}
 
-        .item-3 {
-            grid-column: span 2;
+.read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1f1f21;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #f77f00;
+  transition: background-color 0.3s;
+}
 
-        }
+.read-more:hover {
+  background-color: #f77f00;
+}
 
-        .item-4 {
-            grid-column: span 3;
-
-        }
-
-        .item-5 {
-            grid-column: span 2;
-
-        }
-
-        .item-6 {
-            grid-column: span 3;
-
-        }
-
-        .teal {
-            background-color: rgba(0, 128, 128, 0.6);
-        }
-
-        .red {
-            background-color: rgba(255, 0, 0, 0.6);
-        }
-
-        .gray {
-            background-color: rgba(128, 128, 128, 0.6);
-        }
-
-        .green {
-            background-color: rgba(0, 255, 0, 0.6);
-        }
-
-        .blue {
-            background-color: rgba(0, 0, 255, 0.6);
-        }
-
-        .lightblue {
-            background-color: rgba(173, 216, 230, 0.6);
-        }
-
-        .grid-item p {
-            z-index: 1;
-        }
     </style>
 </head>
 
 <body>
 
-    <section class="grid-section">
-        <h1>Trainings and Exercises</h1>
-        <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+    <section class="latest-posts">
+        <div class="section-title">
+            <h3>Latest Post</h3>
+            <h1>Latest Post & Articles</h1>
+        </div>
 
-        <div class="image-grid">
-            <div class="grid-item item-1">
-                <img src="./assets/exercise1.jpg" alt="Exercise 1">
-                <div class="overlay teal">
-                    <p>Lorem Ipsum</p>
+        <div class="post-grid">
+            <div class="post-item">
+                <div class="post-image">
+                    <img src="./assets/post 1.png" alt="Post Image 1">
+                </div>
+                <div class="post-content">
+                    <h2>Mind Over Matter: The Importance of Health in Fitness</h2>
+                    <p>Consistency is key when it comes to reaching your fitness goals. Our blog is here to provide you
+                        with tips...</p>
+                    <a href="#" class="read-more">Read More &gt;</a>
                 </div>
             </div>
-            <div class="grid-item item-2">
-                <img src="./assets/exercise2.png" alt="Exercise 2">
-                <div class="overlay red">
-                    <p>Lorem Ipsum</p>
+
+            <div class="post-item">
+                <div class="post-image">
+                    <img src="./assets/post 2.png" alt="Post Image 2">
+                </div>
+                <div class="post-content">
+                    <h2>Strategies for Overcoming Fitness Plateaus and Achieving</h2>
+                    <p>Cardio is essential for heart health and burning calories. Explore our blog for exciting cardio
+                        workouts...</p>
+                    <a href="#" class="read-more">Read More &gt;</a>
                 </div>
             </div>
-            <div class="grid-item item-3">
-                <img src="./assets/exercise3.png" alt="Exercise 3">
-                <div class="overlay gray">
-                    <p>Leg Press: Works the quadriceps and glutes</p>
+
+            <div class="post-item">
+                <div class="post-image">
+                    <img src="./assets/post 3.png" alt="Post Image 3">
                 </div>
-            </div>
-            <div class="grid-item item-4">
-                <img src="./assets/exercise4.png" alt="Exercise 4">
-                <div class="overlay green">
-                    <p>Leg Press: Works the quadriceps and glutes</p>
-                </div>
-            </div>
-            <div class="grid-item item-5">
-                <img src="./assets/exercise5.jpg" alt="Exercise 5">
-                <div class="overlay blue">
-                    <p>Leg Press: Works the quadriceps and glutes</p>
-                </div>
-            </div>
-            <div class="grid-item item-6">
-                <img src="./assets/exercise6.jpg" alt="Exercise 6">
-                <div class="overlay lightblue">
-                    <p>Leg Press: Works the quadriceps and glutes</p>
+                <div class="post-content">
+                    <h2>Fuel Your Workout: A Guide to Pre- and Post-Workout</h2>
+                    <p>Recovery is just as important as your workouts. Dive into our blog to learn about the best
+                        practices...</p>
+                    <a href="#" class="read-more">Read More &gt;</a>
                 </div>
             </div>
         </div>
