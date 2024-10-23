@@ -5,22 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Website</title>
+    <!-- !Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- !Custom Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet">
+    <!-- !CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- !Header Section -->
     <header class="">
+        <!-- !NavBar -->
         <nav class="nav-container">
             <div class="item-1">
                 <a class="web-title" href="#">Fitness</a>
             </div>
             <div class="item-2">
+                <!-- !Hamburger menu toggle -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- !Navlinks -->
                 <ul class="nav-menu">
                     <li class="home-default"><a href="#">Home</a></li>
                     <li><a href="#">Service</a></li>
@@ -29,6 +43,7 @@
                 </ul>
             </div>
         </nav>
+        <!-- !Heder Content -->
         <div class="header-container">
             <div class="header-text">
                 <h1 class="header-heading">Get body in <span class="miama-text">shape</span> & stay healthy</h1>

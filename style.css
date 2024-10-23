@@ -63,6 +63,33 @@ header {
   font-size: 1rem;
   color: white;
 }
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Show menu when checkbox is checked */
+#menu-toggle:checked + .hamburger + .nav-menu {
+  display: block;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -490,15 +517,10 @@ hr {
   text-align: center;
 }
 
-
-
-
-
-
 .latest-posts {
   padding-bottom: 2rem;
   text-align: center;
-  color:#fff;
+  color: #fff;
 }
 
 .post-section-title h3 {
@@ -551,4 +573,15 @@ hr {
 
 .read-more:hover {
   background-color: #e6533c;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    justify-content: space-between;
+    /* Hide hamburger on larger screens */
+  }
+  .nav-menu {
+    display: none;
+  }
 }
