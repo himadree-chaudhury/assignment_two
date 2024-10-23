@@ -247,9 +247,6 @@ header {
   object-fit: cover;
   border-radius: 10px;
 }
-.train-and-exercise {
-  color: #fff;
-}
 .train-and-exercise > h1 {
   font-weight: 800;
   font-size: 3rem;
@@ -283,8 +280,9 @@ header {
   right: 0;
   bottom: 0;
   padding: 1rem 1rem;
-  font-weight: 900;
-  font-size: 1.2rem;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #fff;
 }
 
 .exercise-1 {
@@ -351,10 +349,6 @@ header {
   justify-content: start;
   align-items: end;
 }
-
-.grid-item p {
-  z-index: 1;
-}
 #team {
   color: #fff;
   text-align: center;
@@ -393,7 +387,7 @@ header {
   font-size: 1rem;
 }
 .member-name > h1 {
-  font-weight: 900;
+  font-weight: 800;
   font-size: 1.5rem;
 }
 .members img {
@@ -599,5 +593,35 @@ hr {
   }
   .header-text,.header-container{
     width: 100%;
+  }
+  .habits{
+    flex-direction: column;
+  }
+  .run-extra{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .image-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .exercise-1,.exercise-2,.exercise-3,.exercise-4,.exercise-5,.exercise-6{
+    grid-column: span 1;
+  }
+  .bmi-calculator{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .bmi-chart{
+    width: 100%;
+  }
+  .bmi-table{
+    width: 100%;
+  }
+  .team-members{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .post-item{
+    flex-direction: column;
+    align-items: start;
   }
 }
