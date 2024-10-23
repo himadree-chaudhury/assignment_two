@@ -65,7 +65,7 @@ header {
 }
 
 /* Hamburger styles */
-.item-2{
+.item-2 {
   display: flex;
   align-items: center;
   position: relative;
@@ -76,7 +76,7 @@ header {
   width: 2rem;
   height: 2rem;
   position: absolute;
-  right: 0;;
+  right: 0;
 }
 
 .hamburger span {
@@ -145,7 +145,7 @@ header {
   border: 1px solid rgb(255, 255, 255);
   background: rgb(0, 0, 0);
 }
-.header-image{
+.header-image {
   position: relative;
 }
 .feature {
@@ -248,6 +248,7 @@ header {
   border-radius: 10px;
 }
 .train-and-exercise > h1 {
+  color: #fff;
   font-weight: 800;
   font-size: 3rem;
   padding: 1rem 0rem;
@@ -352,7 +353,7 @@ header {
 #team {
   color: #fff;
   text-align: center;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 #team > h1 {
   font-weight: 800;
@@ -588,40 +589,57 @@ hr {
     display: none;
   }
 
-  .header-container{
+  .header-container {
     flex-direction: column;
   }
-  .header-text,.header-container{
+  .header-text,
+  .header-container {
     width: 100%;
   }
-  .habits{
+  .habits {
     flex-direction: column;
   }
-  .run-extra{
+  .run-extra {
     flex-direction: column;
     gap: 2rem;
   }
-  .image-grid{
-    grid-template-columns: repeat(2,1fr);
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .exercise-1,.exercise-2,.exercise-3,.exercise-4,.exercise-5,.exercise-6{
+  .exercise-1,
+  .exercise-2,
+  .exercise-3,
+  .exercise-4,
+  .exercise-5,
+  .exercise-6 {
     grid-column: span 1;
   }
-  .bmi-calculator{
+  .bmi-calculator {
     flex-direction: column;
     gap: 3rem;
   }
-  .bmi-chart{
+  .calculator-heading {
+    padding-left: 2rem;
+  }
+  .bmi-chart {
     width: 100%;
   }
-  .bmi-table{
+  .bmi-table {
     width: 100%;
   }
-  .team-members{
-    grid-template-columns: repeat(1,1fr);
+  .team-members {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .post-item{
+  .post-item {
     flex-direction: column;
     align-items: start;
+  }
+  .footer-flex {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  .footer-heading {
+    width: 100%;
   }
 }
