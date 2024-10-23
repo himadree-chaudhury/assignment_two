@@ -316,47 +316,47 @@ header {
 .grid-item p {
   z-index: 1;
 }
-#team{
+#team {
   color: #fff;
   text-align: center;
 }
-#team>h1{
+#team > h1 {
   font-weight: 800;
   font-size: 3rem;
   padding: 1rem 0rem;
 }
-#team>p{
+#team > p {
   color: rgba(239, 237, 232, 0.65);
   padding: 1rem 0rem 2rem 0rem;
 }
-.team-members{
+.team-members {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   border-radius: 18px;
   padding: 1rem;
   background: rgb(34, 34, 34);
 }
 
-.members{
+.members {
   position: relative;
   height: 20rem;
 }
-.member-name{
-display: flex;
-flex-direction: column;
-justify-content: end;
-align-items: start;
+.member-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
 }
-.member-name>p{
+.member-name > p {
   color: rgba(239, 237, 232, 0.65);
   font-size: 1rem;
 }
-.member-name>h1{
+.member-name > h1 {
   font-weight: 900;
   font-size: 1.5rem;
 }
-.members img{
+.members img {
   opacity: 80%;
   width: 100%;
   height: 100%;
@@ -364,30 +364,74 @@ align-items: start;
   border-radius: 18px;
 }
 
+#bmi-calculator-container {
+  background: rgb(34, 34, 34);
+}
+.bmi-calculator {
+  color: white;
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.bmi-chart{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  width: 50%;
+}
+.bmi-table{
+  width: 50%;
+}
+table, th, td {
+  text-align: left;
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+}
+.bmi-chart td {
+  color: rgba(239, 237, 232, 0.65);
+}
+.calculator-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  gap: 1rem;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.calculator-container > p {
+  color: rgba(239, 237, 232, 0.65);
+}
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+}
+input,
+select {
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+select{
+  color: rgba(255, 255, 255, 0.6);
+}
+select>option{
+  background: rgba(34, 34, 34, 0.9);
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+#factor {
+  grid-column: span 2;
+}
+.bmi-btn{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
