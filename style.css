@@ -4,17 +4,21 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+/* *Body */
 body {
   width: 100%;
   font-family: "Inter", sans-serif;
 }
+/* *All anchor tag */
 a {
   text-decoration: none;
 }
+/* *Universal Section Design */
 .container {
   padding: 1rem 2rem 0rem 2rem;
   background: rgb(17, 17, 17);
 }
+/* *Header */
 header {
   padding: 1rem 2rem 0rem 2rem;
   color: white;
@@ -25,6 +29,7 @@ header {
     rgb(17, 17, 17)
   );
 }
+/* *NavBar */
 .nav-container {
   top: 0;
   display: flex;
@@ -34,12 +39,14 @@ header {
 .item-2 {
   width: 50%;
 }
+/* *Web-Title */
 .web-title {
   font-style: italic;
   font-weight: 800;
   font-size: 2rem;
   color: #e6533c;
 }
+/* *Navigation Menu */
 .nav-menu {
   list-style: none;
   display: flex;
@@ -48,7 +55,6 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 40px;
 }
-
 .home-default {
   border-radius: 40px;
   background-color: #e6533c;
@@ -64,7 +70,7 @@ header {
   color: white;
 }
 
-/* Hamburger styles */
+/* *Hamburger styles */
 .item-2 {
   display: flex;
   align-items: center;
@@ -87,16 +93,16 @@ header {
   margin-bottom: 5px;
   transition: all 0.3s ease;
 }
-/* Hide checkbox */
+/* *Hide checkbox in Hamburger*/
 #menu-toggle {
   display: none;
 }
 
-/* Show menu when checkbox is checked */
+/* *Show menu when checkbox is checked for mobile*/
 #menu-toggle:checked + .hamburger + .nav-menu {
   display: block;
 }
-
+/* *Header Content */
 .header-container {
   display: flex;
   align-items: center;
@@ -403,7 +409,6 @@ header {
 }
 
 .calculator-heading > h1 {
-  width: 80%;
   color: #fff;
   font-weight: 800;
   font-size: 3rem;
@@ -580,15 +585,15 @@ hr {
   background-color: #e6533c;
 }
 
+/* *Media Query For Mobile Devices */
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    /* Hide hamburger on larger screens */
   }
   .nav-menu {
     display: none;
   }
-
   .header-container {
     flex-direction: column;
   }
@@ -602,6 +607,12 @@ hr {
   .run-extra {
     flex-direction: column;
     gap: 2rem;
+  }
+  .run-img img{
+    
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   }
   .image-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -626,6 +637,9 @@ hr {
   }
   .bmi-table {
     width: 100%;
+  }
+  form >input{
+    width: 80%;
   }
   .team-members {
     grid-template-columns: repeat(1, 1fr);
